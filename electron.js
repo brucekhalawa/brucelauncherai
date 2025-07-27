@@ -9,7 +9,7 @@ function createWindow() {
       contextIsolation: false
     }
   });
-  win.loadFile(path.join(__dirname, 'frontend/index.html'));
+  win.loadFile(path.join(__dirname, 'index.html'));
 }
 
 electronApp.whenReady().then(createWindow);
@@ -19,4 +19,5 @@ electronApp.on('window-all-closed', () => {
 });
 
 electronApp.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) createWindow());
+  if (BrowserWindow.getAllWindows().length === 0) createWindow();
+});

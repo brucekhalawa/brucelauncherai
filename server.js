@@ -1,3 +1,5 @@
+// ⭐ Bruce Launcher – Rated 5/5 Star – Supercomputer AI Design Edition + ChatGPT AI Backend + Manus AI Updater + Full Setup + Installer + Deployment + Local Run
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -41,7 +43,7 @@ const openai = new OpenAIApi(new Configuration({
   apiKey: process.env.OPENAI_API_KEY
 }));
 
-app.use(express.static('frontend'));
+app.use(express.static('.'));
 
 app.get('/login', (req, res) => {
   const scopes = [
