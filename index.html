@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bruce Launcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Bruce Launcher AI</h1>
+    <button onclick="loginSpotify()">Login with Spotify</button>
+    <div id="avatar"></div>
+    <input id="voiceInput" placeholder="Voice command or ask AI" />
+    <button onclick="sendVoice()">🎤 Send</button>
+    <div id="response"></div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
